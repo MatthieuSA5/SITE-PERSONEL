@@ -1,0 +1,408 @@
+/****************************************************************** test de code N°1 **************************************************************/
+
+*{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    font-family:'Darker Grotesque', sans-serif;
+}
+
+body{
+    background-color:rgb(0, 0, 0);
+}
+
+
+/************************************************************************ NAV **************************************************************/
+
+nav {
+    width: 200px;
+    background-color: var(--couleur-fond);
+    background-color: var(--couleur-fond);
+    z-index: 20;
+    position: fixed;
+    right: 0;
+}
+
+nav ul{
+    list-style-type:none;
+}
+
+nav a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color: white;
+    padding:17.5px;
+    font-size:15px;
+    font-weight: bold;
+}
+
+nav > ul li:hover .sous{
+    display:block;
+}
+
+nav .sous{
+    display:none;
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    width:100%;
+    z-index:10;
+    text-transform:uppercase;
+}
+
+nav .sous a{
+    padding:10px;
+}
+
+nav .sous a:hover{
+    transition:0.5s;
+}
+nav .sous li:nth-child(1) a:hover{
+    background-color:#6cd625;
+}
+nav .sous li:nth-child(2) a:hover{
+    background-color:rgb(216, 20, 128)
+}
+nav .sous li:nth-child(3) a:hover{
+    background-color:#ca5c56;
+}
+nav .sous li:nth-child(4) a:hover{
+    background-color:#ad4040;
+}
+nav .sous li:nth-child(5) a:hover{
+    background-color:#bd2a82;
+}
+nav .sous li:nth-child(6) a:hover{
+    background-color:#977a53;
+}
+nav .sous li:nth-child(7) a:hover{
+    background-color:#000000;
+    color:#722b2b;
+}
+nav .sous li:nth-child(8) a:hover{
+    background-color:#cfcfcf;
+}
+
+
+
+/*****************************************************************SECTION*******************************************************************/
+
+
+section{
+    display:none;
+    position:fixed;
+    top:50px;
+    bottom:50px;
+    left:0px;
+    right:0px;
+    overflow:auto;  
+}
+
+section:target{
+    display:block;
+    padding:12px;
+    font-size:12px;
+    color:#FFFFFF;
+}
+
+section h1{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    height:50px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#232323;
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:lighter;
+}
+
+section:nth-child(2) h1{
+    background-color:#6cd625;
+}
+section:nth-child(3) h1{
+    background-color:rgb(107, 9, 63)
+}
+section:nth-child(4) h1{
+    background-color:#9b443f;
+}
+section:nth-child(5) h1{
+    background-color:#722b2b;
+}
+section:nth-child(6) h1{
+    background-color:#84476c;
+}
+section:nth-child(7) h1{
+    background-color:#c29f71;
+}
+
+
+
+/************************************************************* FOOTER **************************************************************/
+
+
+footer {
+    position:fixed;
+    width:100%;
+    bottom:0px;
+    left:0px;
+    font-size:17.5px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer a{
+    text-decoration:none;
+    margin-right:10px;
+    margin-left:-10px;
+    display:flex;
+    align-items:center;
+}
+
+.arrow-color-left span, .arrow-color-right span{
+    opacity:0;
+    transition: 0.5s;
+}
+
+.arrow-color-left:hover span, .arrow-color-right:hover span{
+    opacity:1;
+}
+
+.arrow-color-left, .arrow-color-right{
+    color:#FFFFFF;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+
+
+/************************************************************* ACCUEIL **************************************************************/
+
+
+.contenu-accueil img{
+    height:250px;
+    width:250px;
+    padding:75px;
+}
+
+.contenu-accueil .position-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contenu-accueil p{
+    display:flex;
+    justify-content:center;
+    font-size:20px;
+}
+
+
+/************************************************************* A-PROPOS **************************************************************/
+
+
+.contenu-a-propos .position-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contenu-a-propos p{
+    font-size:20px;
+    text-align:center;
+}
+
+
+/************************************************************ COMPETENCES ******************************************************************/
+
+.contenu-competences{
+    font-size:20px;
+    padding-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.contenu-competences .titre, .contenu-competences .contenu{
+    text-align:center;
+    padding:20px;
+    width:300px;
+    min-height:100px;
+}
+
+.contenu-competences .titre{
+    text-transform:uppercase;
+    background-color:#9b443f;
+}
+
+.contenu-competences .contenu{
+    background-color:#353535;
+}
+
+.contenu-competences td div{
+    margin-top:10px;
+}
+
+.contenu-competences table{
+    border-spacing:50px 5px;
+}
+
+/**********DEBUT BARRES DE PROGRESSION**********/
+.progress{
+    background-color:#dbdbdb;
+    height:7.5px;
+    width:100px;
+    margin:0px auto;
+}
+
+.progress .barre{
+    height:100%;
+}
+
+.progress .barre.html{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.css{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.javascript{
+    width:60%;
+    background-color:#dda148;
+}
+.progress .barre.php{
+    width:10%;
+    background-color:#9b443f;
+}
+.progress .barre.sql{
+    width:10%;
+    background-color:#9b443f;
+}
+
+.progress .barre.adressage_ip{
+    width:100%;
+    background-color:#4682b4;
+}
+.progress .barre.modèle_osi{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.modèle_tcp_ip{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.analyse_trames{
+    width:70%;
+    background-color:#6f9457;
+}
+
+.progress .barre.français{
+    width:100%;
+    background-color:#4682b4;
+}
+.progress .barre.anglais{
+    width:65%;
+    background-color:#6f9457;
+}
+.progress .barre.espagnol{
+    width:35%;
+    background-color:#dda148;
+}
+
+
+/***************************************************************** EXPERIENCE *************************************************************/
+
+
+.contenu-experience{
+    padding-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.contenu-experience .titre, .contenu-experience .contenu, .contenu-experience .contenu-couleur{
+   
+    text-align:center;
+    padding:20px;
+    width:300px;
+    min-height:100px;
+    
+}
+
+.contenu-experience .titre{
+    background-color:#4682b4;
+    text-transform: uppercase;
+    font-size:17px;
+}
+
+.contenu-experience .contenu, .contenu-experience .contenu-couleur{
+    background-color:#353535;
+    font-size:16px;
+}
+
+.contenu-experience table{
+    border-spacing:20px 5px;
+}
+
+.contenu-experience ul{
+    padding-left: 10px;
+}
+
+.contenu-experience .contenu-couleur{
+    color:#4682b4;
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+/************************************************************* FORMATION **************************************************************/
+
+
+.contenu-formation{
+    padding-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.contenu-formation .titre, .contenu-formation .contenu, .contenu-formation .contenu-couleur{
+    text-align:center;
+    padding:20px;
+    min-height:100px;
+    width:300px;
+}
+
+.contenu-formation .titre{
+    background-color:#84476c;
+    text-transform: uppercase;
+    font-size:17px;
+}
+
+.contenu-formation .contenu, .contenu-formation .contenu-couleur{
+    background-color:#353535;
+    font-size:16px;
+}
+
+.contenu-formation table{
+    border-spacing:20px 5px;
+}
+
+.contenu-formation ul{
+    padding-left: 10px;
+}
+
+.contenu-formation .contenu-couleur{
+    background-color: #535353;
+}
+
+/****FIN***/
