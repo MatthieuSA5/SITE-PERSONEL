@@ -1,3 +1,9 @@
+<?php
+
+require_once("../yaml/yaml.php")
+
+?>
+
 <!--<!DOCTYPE html> -->
 <html lang="fr">
 
