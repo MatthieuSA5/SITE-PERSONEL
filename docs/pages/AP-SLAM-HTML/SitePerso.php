@@ -6,7 +6,7 @@
 <head>
     <title>Projet port-folio</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="google.com">
+    <link rel="stylesheet" href="https://www.ecoledirecte.com/Eleves/9784">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
