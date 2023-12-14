@@ -6,7 +6,7 @@
 <head>
     <title>Projet port-folio</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://www.ecoledirecte.com/Eleves/9784">
+    <link rel="stylesheet" href="../../assetes/CSS/AP-SLAM-CSS/siteperso.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
@@ -36,7 +36,6 @@ $data=yaml_parse_file("assetes/yaml/accueil.yaml");
 
         <section id="accueil" style="background-color: rgb(36, 173, 173);">
             <h1>Accueil</h1>
-            <img src="téléchargement.jpg">
             <div class="contenu-accueil">
                 <div class="position-image">
                 <?php echo '<img src="../../assetes/IMG'.$data['img'].'">'; ?>
