@@ -1,10 +1,3 @@
-<?php
-
-
-
-?>
-
-
 <!--<!DOCTYPE html> -->
 <html lang="fr">
 
@@ -13,7 +6,7 @@
 <head>
     <title>Projet port-folio</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../assetes/CSS/AP-SLAM-CSS/siteperso.css">
+    <link rel="stylesheet" href="assetes/CSS/AP-SLAM-CSS/siteperso.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
@@ -37,16 +30,16 @@
         
 <!-- section accueil -->
 <?php
-$data=yaml_parse_file("../../assetes/yaml/$accueil.yaml");
+$data=yaml_parse_file("../assetes/yaml/accueil.yaml");
 ?>
+
         <section id="accueil" style="background-color: rgb(36, 173, 173);">
-            <script src="../../assetes/PHP/site-perso.php"></script>
             <h1>Accueil</h1>
             <div class="contenu-accueil">
                 <div class="position-image">
-                   <?php echo '<img src="../../assetes/IMG/'.$data['img'].'" alt="">'; ?>
+                <?php echo '<img src="../../assetes/IMG'.$data['img'].'">'; ?>
                 </div>
-               <?php echo '<p>'.$data['accroche'].'</p>'; ?>
+                <?php echo '<p>'.$data['accroche'].'</p>'; ?>
             </div>
             <footer>
                 <a class="arrow-color-left" href="#contact">
@@ -60,14 +53,15 @@ $data=yaml_parse_file("../../assetes/yaml/$accueil.yaml");
         </section>
 
 <!-- section a propos-->     
+<?php
+$data=yaml_parse_file("../assetes/yaml/à-propo.yaml");
+?>
 
         <section id="a-propos" style="background-color: rgb(49, 4, 70);">
             <h1>à propos</h1>
             <div class="contenu-a-propos">
-                <p>Ce site Web, créé par mais propre moyen, vous donnera une vision de mes compétences.</p><br>
-                <p>Je suis étudiant en première année de BTS (brevet de technicien supérieur) SIO (Services Informatiques aux Organisations) au sein de l'établisement CaenSup Sainte-Ursule.<br>
-                    Je réalise ce site Web dans le but d'aboutir un projet en atelier professionnel.<br>
-                    je suis âgé de 18 ans est vous présentera mais compétences, mon éxperiance en milieu pro et mais différante formation</p>
+                <?php '<p>'.$data['compétence'].'</p>'; ?> <br>
+                <?php '<p>'.$data['présentation'].'</p>'; ?>
             </div>
             <footer>
                 <a class="arrow-color-left" href="#accueil">
@@ -82,6 +76,10 @@ $data=yaml_parse_file("../../assetes/yaml/$accueil.yaml");
         </section>
 
 <!-- section competences -->
+<?php
+$data=yaml_parse_file("../assetes/yaml/competences.yaml");
+?>
+
 
 <section id="competences" style="background-color: rgb(86, 166, 219)">
     <h1>Compétences</h1>
@@ -100,10 +98,16 @@ $data=yaml_parse_file("../../assetes/yaml/$accueil.yaml");
     </footer>
 </section>
 
+<!-- section Expériance -->
+<?php
+$data=yaml_parse_file("../assetes/yaml/éxperiance.yaml");
+?>
+
+
 <section id="experience" style="background-color: rgb(194, 58, 58);">
     <h1>Expérience</h1>
     <div class="contenu-experience">
-        <tr>futur php</tr>
+       <?php '<p>'.$data['2020-2021'].' </p>' ?>
     </div>
   </div>
     <footer>
@@ -117,6 +121,12 @@ $data=yaml_parse_file("../../assetes/yaml/$accueil.yaml");
         </a>
     </footer>
 </section>
+
+<!-- section competences -->
+<?php
+$data=yaml_parse_file("../assetes/yaml/Formation.yaml");
+?>
+
 
 <section id="formation" style="background-color: rgb(73, 10, 68);">
     <h1>Formation</h1>
@@ -135,6 +145,12 @@ $data=yaml_parse_file("../../assetes/yaml/$accueil.yaml");
         </a>
     </footer>
 </section>
+
+<!-- section competences -->
+<?php
+$data=yaml_parse_file("../assetes/yaml/contact.yaml");
+?>
+
 
 <section id="contact" style="background-color: rgb(138, 93, 35);">
     <h1>Contact</h1>
