@@ -30,7 +30,7 @@
         
 <!-- section accueil -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/accueil.yaml");
+$data=yaml_parse_file("assetes/yaml/accueil.yaml");
 ?>
 
         <section id="accueil" style="background-color: rgb(36, 173, 173);">
@@ -54,7 +54,7 @@ $data=yaml_parse_file("../assetes/yaml/accueil.yaml");
 
 <!-- section a propos-->     
 <?php
-$data=yaml_parse_file("../assetes/yaml/à-propo.yaml");
+$data=yaml_parse_file("assetes/yaml/à-propo.yaml");
 ?>
 
         <section id="a-propos" style="background-color: rgb(49, 4, 70);">
@@ -77,7 +77,7 @@ $data=yaml_parse_file("../assetes/yaml/à-propo.yaml");
 
 <!-- section competences -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/competences.yaml");
+$data=yaml_parse_file("assetes/yaml/competences.yaml");
 ?>
 
 
@@ -100,7 +100,7 @@ $data=yaml_parse_file("../assetes/yaml/competences.yaml");
 
 <!-- section Expériance -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/éxperiance.yaml");
+$data=yaml_parse_file("assetes/yaml/éxperiance.yaml");
 ?>
 
 
@@ -124,7 +124,7 @@ $data=yaml_parse_file("../assetes/yaml/éxperiance.yaml");
 
 <!-- section competences -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/Formation.yaml");
+$data=yaml_parse_file("assetes/yaml/Formation.yaml");
 ?>
 
 
@@ -148,7 +148,7 @@ $data=yaml_parse_file("../assetes/yaml/Formation.yaml");
 
 <!-- section competences -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/contact.yaml");
+$data=yaml_parse_file("assetes/yaml/contact.yaml");
 ?>
 
 
