@@ -36,6 +36,7 @@ $data=yaml_parse_file("assetes/yaml/accueil.yaml");
 
         <section id="accueil" style="background-color: rgb(36, 173, 173);">
             <h1>Accueil</h1>
+            <img src="téléchargement.jpg">
             <div class="contenu-accueil">
                 <div class="position-image">
                 <?php echo '<img src="../../assetes/IMG'.$data['img'].'">'; ?>
