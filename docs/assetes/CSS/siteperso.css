@@ -255,67 +255,18 @@ footer a{
     border-spacing:50px 5px;
 }
 
-/**********DEBUT BARRES DE PROGRESSION**********/
-.progress{
-    background-color:#dbdbdb;
-    height:7.5px;
-    width:100px;
-    margin:0px auto;
+/**********BARRES DE PROGRESSION**********/
+
+/* Style pour la barre de progression */
+.progress {
+    width: 100%;
+    background-color: #f1f1f1;
 }
 
-.progress .barre{
-    height:100%;
-}
-
-.progress .barre.html{
-    width:80%;
-    background-color:#6f9457;
-}
-.progress .barre.css{
-    width:80%;
-    background-color:#6f9457;
-}
-.progress .barre.javascript{
-    width:60%;
-    background-color:#dda148;
-}
-.progress .barre.php{
-    width:10%;
-    background-color:#9b443f;
-}
-.progress .barre.sql{
-    width:10%;
-    background-color:#9b443f;
-}
-
-.progress .barre.adressage_ip{
-    width:100%;
-    background-color:#4682b4;
-}
-.progress .barre.modèle_osi{
-    width:80%;
-    background-color:#6f9457;
-}
-.progress .barre.modèle_tcp_ip{
-    width:80%;
-    background-color:#6f9457;
-}
-.progress .barre.analyse_trames{
-    width:70%;
-    background-color:#6f9457;
-}
-
-.progress .barre.français{
-    width:100%;
-    background-color:#4682b4;
-}
-.progress .barre.anglais{
-    width:65%;
-    background-color:#6f9457;
-}
-.progress .barre.espagnol{
-    width:35%;
-    background-color:#dda148;
+/* Style pour la barre de remplissage */
+.barre {
+    height: 30px;
+    background-color: #4caf50; /* Couleur de la barre de progression */
 }
 
 
@@ -362,6 +313,12 @@ footer a{
     color:#4682b4;
     background-color: #FFFFFF;
     font-weight: bold;
+}
+
+#experience .contenu-experience p {
+    font-size:100px;
+    text-align:center;
+    color:rgb(107, 9, 63)
 }
 
 /************************************************************* FORMATION **************************************************************/

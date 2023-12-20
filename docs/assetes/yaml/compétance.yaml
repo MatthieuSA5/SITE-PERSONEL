@@ -1,3 +1,7 @@
-2020-2021 :
-2021-2022 :
-2022-2023 :
+barres_de_progression:
+  - titre: HTML
+    progression: 80
+  - titre: CSS
+    progression: 70
+  - titre: JavaScript
+    progression: 60
