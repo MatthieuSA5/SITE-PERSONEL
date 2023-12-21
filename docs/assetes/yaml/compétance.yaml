@@ -1,7 +1,22 @@
-barres_de_progression:
-  - titre: HTML
-    progression: 80
-  - titre: CSS
-    progression: 70
-  - titre: JavaScript
-    progression: 60
+- domaine: développement
+  competences:
+    - titre: HTML
+      progression: 30
+    - titre: CSS
+      progression: 70
+    - titre: JavaScript
+      progression: 60
+
+- domaine : langue 
+  competences:
+    - titre: Français
+      progression: 75
+    - titre: anglais
+      progression: 25
+    - titre: espagnol
+      progression: 10
+
+- domaine : CERTIF 
+  competences:
+    - titre: Voltaire
+      progression: 75

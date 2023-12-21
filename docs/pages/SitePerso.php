@@ -87,21 +87,21 @@ $data=yaml_parse_file("../assetes/yaml/à-propo.yaml");
 <!-- section competences -->
 <?php
 $data=yaml_parse_file("../assetes/yaml/compétance.yaml");
-
-// Parcours des données YAML pour générer des barres de progression
- //foreach ($donnees['barres_de_progression'] as $barre) {
-  //  echo '<div class="progress">';
-    //echo '<div class="barre" style="width: ' . $barre['progression'] . '%;"></div>';
-    //echo '<span>' . $barre['titre'] . '</span>'; // Affiche le titre de la barre
-    //echo '</div>';
-//}
+print_array($data);
 ?>
 
 <section id="competences" style="background-color: rgb(86, 166, 219)">
     <h1>Compétences</h1>
-    <div class="contenu-competences">
-       <tr>futur php</tr>
-    </div>
+   <?php 
+        foreach($data AS $competence){
+            echo '<div class="progress">';
+            echo '<div class="barre" style="width:'.($competence['progression']*3).'px;">'.$competence['titre'].'</div>';
+            echo '</div>';
+        } 
+    ?>
+
+
+   
     <footer>
         <a class="arrow-color-left" href="#a-propos">
             <span class="arrow-color-right">Page précédente</span>
@@ -124,8 +124,8 @@ $data=yaml_parse_file("../assetes/yaml/éxperiance.yaml");
 <section id="experience" style="background-color: rgb(194, 58, 58);">
     <h1>Expérience</h1>
     <div class="contenu-experience">
-       <?php echo '<p>'.$data['2020-2021'].' </p>' ?>
-       <?php echo '<p>'.$data['2021-2022'].' </p>' ?>
+       <?php echo '<p>'.$data['2020-2021'].' </p>' ?> <br>
+       <?php echo '<p>'.$data['2021-2022'].' </p>' ?> <br>
        <?php echo '<p>'.$data['2022-2023'].' </p>' ?>
     </div>
 

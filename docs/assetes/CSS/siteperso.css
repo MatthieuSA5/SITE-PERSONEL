@@ -19,8 +19,10 @@ nav {
     background-color: var(--couleur-fond);
     background-color: var(--couleur-fond);
     z-index: 20;
-    position: fixed;
-    right: 0;
+    position:fixed;
+    top: 15;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul{
@@ -222,51 +224,16 @@ footer a{
 
 /************************************************************ COMPETENCES ******************************************************************/
 
-.contenu-competences{
-    font-size:20px;
-    padding-top:50px;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    flex-wrap:wrap;
+.progress{
+    height: 20px;
+    width: 300px;
+    border: solid black 2px;
+    
 }
 
-.contenu-competences .titre, .contenu-competences .contenu{
-    text-align:center;
-    padding:20px;
-    width:300px;
-    min-height:100px;
-}
-
-.contenu-competences .titre{
-    text-transform:uppercase;
-    background-color:#9b443f;
-}
-
-.contenu-competences .contenu{
-    background-color:#353535;
-}
-
-.contenu-competences td div{
-    margin-top:10px;
-}
-
-.contenu-competences table{
-    border-spacing:50px 5px;
-}
-
-/**********BARRES DE PROGRESSION**********/
-
-/* Style pour la barre de progression */
-.progress {
-    width: 100%;
-    background-color: #f1f1f1;
-}
-
-/* Style pour la barre de remplissage */
-.barre {
-    height: 30px;
-    background-color: #4caf50; /* Couleur de la barre de progression */
+.barre{
+    height: 18px;
+    background-color: #6cd625;
 }
 
 
@@ -316,9 +283,9 @@ footer a{
 }
 
 #experience .contenu-experience p {
-    font-size:100px;
+    font-size:24px;
     text-align:center;
-    color:rgb(107, 9, 63)
+    color:rgb(0, 0, 0)
 }
 
 /************************************************************* FORMATION **************************************************************/
