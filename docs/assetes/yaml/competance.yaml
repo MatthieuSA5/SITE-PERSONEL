@@ -1,0 +1,24 @@
+- domaine: développement
+  competences:
+    - titre: HTML
+      progression: 50
+    - titre: CSS
+      progression: 30
+    - titre: PHP
+      progression: 10
+    - titre: SQL
+      progression: 10
+
+- domaine: langue 
+  competences:
+    - titre: Français
+      progression: 85
+    - titre: Anglais
+      progression: 20
+    - titre: Espagnol
+      progression: 5
+
+- domaine: certif
+  competences:
+    - titre: Voltaire
+      progression: 25

@@ -86,20 +86,30 @@ $data=yaml_parse_file("../assetes/yaml/à-propo.yaml");
 
 <!-- section competences -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/compétance.yaml");
+$data=yaml_parse_file("../assetes/yaml/competance.yaml");
 print_array($data);
 ?>
 
 <section id="competences" style="background-color: rgb(86, 166, 219)">
     <h1>Compétences</h1>
-   <?php 
-        foreach($data AS $competence){
-            echo '<div class="progress">';
-            echo '<div class="barre" style="width:'.($competence['progression']*3).'px;">'.$competence['titre'].'</div>';
-            echo '</div>';
-        } 
-    ?>
+    <?php
+foreach ($data as $domaine) {
+    echo '<div class="domaine">';
+    echo '<h2>' . $domaine['domaine'] . '</h2>'; // Affiche le nom du domaine
+    
+    echo '<div class="progress">'; // Ouvre le conteneur de barres de progression
+    
+    foreach ($domaine['competences'] as $competence) {
+        echo '<div class="competence">';
+        echo '<div class="titre">' . $competence['titre'] . '</div>'; // Affiche le titre de la compétence
+        echo '<div class="barre" style="width:' . $competence['progression'] . '%;"></div>'; // Barre de progression
+        echo '</div>'; // Ferme le conteneur de compétence
+    }
 
+    echo '</div>'; // Ferme le conteneur de barres de progression
+    echo '</div>'; // Ferme le conteneur de domaine
+}
+?>
 
    
     <footer>
@@ -117,16 +127,16 @@ print_array($data);
 
 <!-- section Expériance -->
 <?php
-$data=yaml_parse_file("../assetes/yaml/éxperiance.yaml");
+$data=yaml_parse_file("../assetes/yaml/experiance.yaml");
 ?>
 
 
 <section id="experience" style="background-color: rgb(194, 58, 58);">
     <h1>Expérience</h1>
     <div class="contenu-experience">
-       <?php echo '<p>'.$data['2020-2021'].' </p>' ?> <br>
+       <?php echo '<p>'.$data['2022-2023'].' </p>' ?> <br>
        <?php echo '<p>'.$data['2021-2022'].' </p>' ?> <br>
-       <?php echo '<p>'.$data['2022-2023'].' </p>' ?>
+       <?php echo '<p>'.$data['2020-2021'].' </p>' ?>
     </div>
 
     <footer>
