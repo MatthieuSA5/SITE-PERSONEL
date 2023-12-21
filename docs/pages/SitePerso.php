@@ -43,7 +43,7 @@ $data=yaml_parse_file("../assetes/yaml/accueil.yaml");
             <h1>Accueil</h1>
             <div class="contenu-accueil">
                 <div class="position-image">
-                <?php echo '<img src="../../assetes/IMG'.$data['img'].'">'; ?>
+                <?php echo '<img src="../assetes/IMG/'.$data['img'].'">'; ?>
                 </div>
                 <?php echo '<p>'.$data['accroche'].'</p>'; ?>
             </div>
@@ -93,23 +93,22 @@ print_array($data);
 <section id="competences" style="background-color: rgb(86, 166, 219)">
     <h1>Compétences</h1>
     <?php
-foreach ($data as $domaine) {
-    echo '<div class="domaine">';
-    echo '<h2>' . $domaine['domaine'] . '</h2>'; // Affiche le nom du domaine
-    
-    echo '<div class="progress">'; // Ouvre le conteneur de barres de progression
-    
-    foreach ($domaine['competences'] as $competence) {
-        echo '<div class="competence">';
-        echo '<div class="titre">' . $competence['titre'] . '</div>'; // Affiche le titre de la compétence
-        echo '<div class="barre" style="width:' . $competence['progression'] . '%;"></div>'; // Barre de progression
-        echo '</div>'; // Ferme le conteneur de compétence
-    }
+        foreach ($data as $domaine) {
+            echo '<div class="domaine">';
+            echo '<div class="domaine-titre"><h2>' . $domaine['domaine'] . '</h2></div>'; // Entoure le titre de domaine avec une div
+            echo '<div class="progress">'; // Ouvre le conteneur de barres de progression
 
-    echo '</div>'; // Ferme le conteneur de barres de progression
-    echo '</div>'; // Ferme le conteneur de domaine
-}
-?>
+            foreach ($domaine['competences'] as $competence) {
+                echo '<div class="competence">';
+                echo '<div class="titre">' . $competence['titre'] . '</div>'; // Affiche le titre de la compétence
+                echo '<div class="barre" style="width:' . $competence['progression'] . '%;"></div>'; // Barre de progression
+                echo '</div>'; // Ferme le conteneur de compétence
+            }
+
+            echo '</div>'; // Ferme le conteneur de barres de progression
+            echo '</div>'; // Ferme le conteneur de domaine
+        }
+    ?>
 
    
     <footer>
