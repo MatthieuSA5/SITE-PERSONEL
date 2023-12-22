@@ -11,27 +11,25 @@ require_once("../YAML/yaml/yaml.php");
     <title>Projet port-folio</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../assetes/CSS/siteperso.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
 
 </head>
-    <body>
-        <nav>
-            <ul>
-                <li class="deroulant">
-                    <a href="#accueil"></i></a>
-                    <ul class="sous">
-                        <li><a href="#accueil">accueil</a></li>
-                        <li><a href="#a-propos">à propos</a></li>
-                        <li><a href="#competences">compétences</a></li>
-                        <li><a href="#experience">expérience</a></li>
-                        <li><a href="#formation">formation</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </li>
-            </ul> 
-        </nav>
+<body>
+    <nav>
+        <ul>
+            <li class="deroulant">
+                <a href="#accueil"></i></a>
+                <ul class="sous">
+                    <li><a href="#accueil">accueil</a></li>
+                    <li><a href="#a-propos">à propos</a></li>
+                    <li><a href="#competences">compétences</a></li>
+                    <li><a href="#experience">expérience</a></li>
+                    <li><a href="#formation">formation</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </nav>
         
 
 <!-- section accueil -->
@@ -186,14 +184,10 @@ $data=yaml_parse_file("../assetes/yaml/Formation.yaml");
 <section id="contact" style="background-color: rgb(138, 93, 35);">
     <h1>Contact</h1>
     <div class ="contenue-contact">
-        <tr>futur php</tr>
+        <p>Voici touts les moyens de me joindre</p>
         <ul>
-            <li>
-                <ul>
-                    <li><a href="https://github.com/MatthieuSA5" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                </ul>
-            </li>
-        </ul> 
+            <li><a href="https://github.com/MatthieuSA5" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
     </div>
     <footer>
         <a class="arrow-color-left" href="#formation">
@@ -209,5 +203,6 @@ $data=yaml_parse_file("../assetes/yaml/Formation.yaml");
 
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="./../assets/js/site.js"></script> 
+
 </body>
 </html>

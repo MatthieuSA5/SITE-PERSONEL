@@ -1,4 +1,4 @@
-/****************************************************************** test de code N°1 **************************************************************/
+/****************************************************************** body **************************************************************/
 
 *{
     margin:0px;
@@ -303,6 +303,26 @@ footer a{
 
 .contenu-formation p {
     font-size: 30px; /* Modifiez la taille de la police selon vos préférences */
+}
+
+
+/************************************************************* Contact **************************************************************/
+
+
+.contenue-contact p {
+    font-size: 50px; /* Taille de police pour les balises <p> */
+    text-align:center;
+}
+
+
+.contenue-contact .fa-brands {
+    font-size: 50px; /* Ajuste la taille de l'icône selon ce que tu souhaites */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    margin-left: 600; /* Ajoute un espacement à gauche */
+    color: black;
 }
 
 /****FIN***/
